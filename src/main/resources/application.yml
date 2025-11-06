@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: portkey
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+web3:
+  provider: ${PROVIDER}
+  privateKey: ${PRIVATE_KEY}
+  contractAddress: ${CONTRACT}
+
+lighthouse:
+  apiKey: ${LIGHTHOUSE_KEY}
+
+gemini:
+  apiKey: ${GEMINI_KEY}
+  endpointText: https://generativelanguage.googleapis.com/v1/models/gemini-1.5-pro:generateContent
+  endpointVision: https://generativelanguage.googleapis.com/v1/models/gemini-1.5-pro-vision:generateContent
+  endpointImage: https://generativelanguage.googleapis.com/v1/models/imagetwo:generateImage
